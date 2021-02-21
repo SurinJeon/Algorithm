@@ -16,7 +16,7 @@ public class Question11021 {
 			a = sc.nextInt();
 			b = sc.nextInt();
 
-			System.out.printf("Case #%d: %d%n", i + 1, a + b);
+			System.out.printf("Case #%d: %d + %d = %d%n", i + 1, a, b, a + b);
 		}
 
 		sc.close();
