@@ -9,34 +9,48 @@ public class Question2562 {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		ArrayList<Integer> intList1 = new ArrayList<Integer>();
-
+//		ArrayList<Integer> intList1 = new ArrayList<Integer>();
+//
 		int x;
+		int[] intArr = new int[9];
+		
+//
+//		for (int i = 0; i < 9; i++) {
+//			x = sc.nextInt();
+//			intList1.add(x);
+//		}
+//
+//		ArrayList<Integer> intList2 = intList1;
+//
+//		Comparator<Integer> compInt = new Comparator<Integer>() {
+//
+//			@Override
+//			public int compare(Integer o1, Integer o2) {
+//
+//				return o1 - o2;
+//			}
+//		};
+//
+//		intList2.sort(compInt);
+//
+//		for (int j = 0; j < intList1.size(); j++) {
+//			if (intList1.get(j).equals(intList2.get(intList2.size() - 1))) {
+//				System.out.println(intList1.get(j));
+//				System.out.println(j);
+//			}
+//		}
 
-		for (int i = 0; i < 9; i++) {
+		for (int i = 0; i < intArr.length; i++) {
+
 			x = sc.nextInt();
-			intList1.add(x);
+			intArr[i] = x;
+			
 		}
 
-		ArrayList<Integer> intList2 = intList1;
-
-		Comparator<Integer> compInt = new Comparator<Integer>() {
-
-			@Override
-			public int compare(Integer o1, Integer o2) {
-
-				return o1 - o2;
-			}
-		};
-
-		intList2.sort(compInt);
-
-		for (int j = 0; j < intList1.size(); j++) {
-			if (intList1.get(j).equals(intList2.get(intList2.size() - 1))) {
-				System.out.println(intList1.get(j));
-				System.out.println(j);
-			}
-		}
+		
+		int max = intArr[intArr.length - 1]; 
+		
+		
 		
 		sc.close();
 
